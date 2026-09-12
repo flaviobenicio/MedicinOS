@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - MedicinOS</title>
+    <link rel="stylesheet" href="public/assets/css/base.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="1789229212449.jpg" alt="Logo MedicinOS" class="sidebar-logo">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="sidebar-nav-item">
+                        <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="agenda.html" class="sidebar-link active">Agenda</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Pacientes</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Prontuários</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Consultas</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Financeiro</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Relatórios</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Configurações</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Top Header -->
+            <header class="top-header">
+                <h2>Agenda</h2>
+                <div class="header-actions">
+                    <button class="btn-icon" aria-label="Notificações">🔔</button>
+                    <button class="btn-icon" aria-label="Chat">💬</button>
+                    <div class="avatar">DR</div>
+                </div>
+            </header>
+
+            <!-- Agenda View -->
+            <div class="card">
+                
+                <!-- Controles da Agenda -->
+                <div class="agenda-controls">
+                    <div class="form-group" style="width: 300px; margin-bottom: 0;">
+                        <select class="form-control">
+                            <option>Dr. Aza Sacum</option>
+                            <option>Dra. Auta Silva</option>
+                            <option>Médico Borata</option>
+                        </select>
+                    </div>
+                    
+                    <div class="agenda-nav">
+                        <button class="btn btn-outline">&lt;</button>
+                        <span class="current-week">14 Set - 18 Set, 2026</span>
+                        <button class="btn btn-outline">&gt;</button>
+                    </div>
+                </div>
+
+                <!-- Tabela / Calendário -->
+                <div class="table-responsive">
+                    <table class="table agenda-table">
+                        <thead>
+                            <tr>
+                                <th class="time-col">Horário</th>
+                                <th>Segunda<br><span>14</span></th>
+                                <th>Terça<br><span>15</span></th>
+                                <th>Quarta<br><span>16</span></th>
+                                <th>Quinta<br><span>17</span></th>
+                                <th>Sexta<br><span>18</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time-cell">08:00</td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment-card type-consult">
+                                        <strong>João Silva</strong>
+                                        <span>08:00 - 08:45</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">09:00</td>
+                                <td>
+                                    <div class="appointment-card type-return">
+                                        <strong>Maria Costa</strong>
+                                        <span>09:00 - 09:30</span>
+                                    </div>
+                                    <div class="appointment-card type-consult">
+                                        <strong>Felipe Mendes</strong>
+                                        <span>09:30 - 10:00</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment-card type-consult">
+                                        <strong>Amtber Borum</strong>
+                                        <span>09:15 - 10:00</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">10:00</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment-card type-consult">
+                                        <strong>João Bocum</strong>
+                                        <span>10:00 - 11:00</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">11:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment-card type-return">
+                                        <strong>Março Ploves</strong>
+                                        <span>11:30 - 12:00</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">12:00</td>
+                                <td colspan="5" class="lunch-break">Intervalo para Almoço</td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">13:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">14:00</td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment-card type-consult">
+                                        <strong>Amber Silva</strong>
+                                        <span>14:30 - 15:30</span>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
