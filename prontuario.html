@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário - MedicinOS</title>
+    <link rel="stylesheet" href="public/assets/css/base.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="1789229212449.jpg" alt="Logo MedicinOS" class="sidebar-logo">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="sidebar-nav-item">
+                        <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="agenda.html" class="sidebar-link">Agenda</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="pacientes.html" class="sidebar-link">Pacientes</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="prontuario.html" class="sidebar-link active">Prontuários</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Consultas</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Financeiro</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Relatórios</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-link">Configurações</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Top Header -->
+            <header class="top-header">
+                <div>
+                    <h2>Prontuário Eletrônico</h2>
+                    <span style="font-size: 13px; color: var(--color-text-muted);">Paciente: <strong>Marina Silva</strong> (CPF: 123.456.789-00)</span>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon" aria-label="Notificações">🔔</button>
+                    <button class="btn-icon" aria-label="Chat">💬</button>
+                    <div class="avatar">DR</div>
+                </div>
+            </header>
+
+            <!-- Prontuario Split Grid -->
+            <div class="prontuario-grid">
+                
+                <!-- Coluna Esquerda: Linha do Tempo de Atendimentos -->
+                <div class="card timeline-card" style="margin-bottom: 0;">
+                    <div class="card-header">
+                        <h3 class="card-title">Histórico</h3>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-date">12 Set 2026 - 14:00</div>
+                            <div class="timeline-title">Consulta de Retorno</div>
+                            <div class="timeline-professional">Dr. Aza Sacum</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">28 Ago 2026 - 10:30</div>
+                            <div class="timeline-title">Avaliação Inicial</div>
+                            <div class="timeline-professional">Dra. Auta Silva</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">15 Jul 2026 - 16:15</div>
+                            <div class="timeline-title">Exame de Rotina</div>
+                            <div class="timeline-professional">Dr. Aza Sacum</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Anamnese e Evolução -->
+                <div class="card evolution-card" style="margin-bottom: 0;">
+                    <div class="card-header">
+                        <h3 class="card-title">Anamnese e Evolução Clínica</h3>
+                        <span class="badge badge-success">Atendimento Atual</span>
+                    </div>
+                    
+                    <form>
+                        <div class="form-group">
+                            <label for="queixa" class="form-label">Queixa Principal / Sintomas</label>
+                            <textarea id="queixa" name="queixa" class="form-control" rows="3" placeholder="Relato do paciente sobre os sintomas atuais...">Paciente relata melhora significativa das dores na região lombar após iniciar a fisioterapia recomendada. Sem queixas de novas dores.</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exame_fisico" class="form-label">Exame Físico / Observações</label>
+                            <textarea id="exame_fisico" name="exame_fisico" class="form-control" rows="3" placeholder="Dados do exame físico...">Pressão arterial 120x80 mmHg. Sem alterações significativas na palpação da coluna lombar. Boa amplitude de movimento.</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="conduta" class="form-label">Conduta / Prescrição</label>
+                            <textarea id="conduta" name="conduta" class="form-control" rows="3" placeholder="Conduta médica, exames solicitados ou prescrição...">Manter sessões de fisioterapia por mais 30 dias. Retorno agendado para reavaliação em dois meses.</textarea>
+                        </div>
+
+                        <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 20px;">
+                            <button type="button" class="btn btn-outline">Imprimir Receita</button>
+                            <button type="submit" class="btn btn-primary">Salvar Evolução</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
