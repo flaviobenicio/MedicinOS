@@ -321,3 +321,53 @@ select.form-control {
     background-color: rgba(0, 191, 165, 0.1);
     color: var(--color-teal);
 }
+
+/* ==========================================================================
+   Login
+   ========================================================================== */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    padding: 20px;
+}
+
+.login-card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-light);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--color-border);
+}
+
+.login-logo {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 30px auto;
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-links {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.forgot-password {
+    color: var(--color-teal);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+    color: var(--color-navy);
+}
