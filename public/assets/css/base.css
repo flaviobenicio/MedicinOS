@@ -523,3 +523,21 @@ select.form-control {
     height: 40px !important;
     vertical-align: middle !important;
 }
+
+/* ==========================================================================
+   Form Grid (Adicionado para Pacientes)
+   ========================================================================== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-grid .form-group[style*="grid-column: span 2"] {
+        grid-column: span 1 !important;
+    }
+}
