@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--color-white);
 }
 
 .sidebar-logo {
@@ -370,4 +371,155 @@ select.form-control {
 
 .forgot-password:hover {
     color: var(--color-navy);
+}
+
+/* ==========================================================================
+   Topo (Header da Página)
+   ========================================================================== */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.top-header h2 {
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+}
+
+.btn-icon:hover {
+    color: var(--color-navy);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   Agenda
+   ========================================================================== */
+.agenda-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.agenda-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.current-week {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-text-main);
+}
+
+.agenda-table {
+    table-layout: fixed;
+    min-width: 800px;
+}
+
+.agenda-table th, 
+.agenda-table td {
+    border: 1px solid var(--color-border);
+}
+
+.agenda-table th {
+    text-align: center;
+    padding: 16px;
+}
+
+.agenda-table th span {
+    display: block;
+    font-size: 22px;
+    color: var(--color-navy);
+    margin-top: 4px;
+}
+
+.time-col {
+    width: 80px;
+}
+
+.time-cell {
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    vertical-align: top;
+    padding-top: 12px;
+}
+
+.agenda-table td {
+    vertical-align: top;
+    height: 120px;
+    padding: 8px;
+}
+
+.appointment-card {
+    background-color: var(--color-bg);
+    border-left: 4px solid var(--color-teal);
+    padding: 10px;
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-light);
+}
+
+.appointment-card strong {
+    color: var(--color-navy);
+    font-size: 13px;
+}
+
+.type-consult {
+    border-left-color: var(--color-teal);
+}
+
+.type-return {
+    border-left-color: var(--color-navy);
+}
+
+.lunch-break {
+    background-color: var(--color-bg);
+    text-align: center;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    height: 40px !important;
+    vertical-align: middle !important;
 }
